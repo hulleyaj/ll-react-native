@@ -11,9 +11,9 @@ export default {
               TabOneScreen: 'one',
             },
           },
-          TabTwo: {
+          Struxtion: {
             screens: {
-              TabTwoScreen: 'two',
+              StruxtionScreen: 'struxtion',
             },
           },
         },
