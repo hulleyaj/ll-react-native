@@ -2,8 +2,6 @@ import * as React from 'react';
 import { StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import { Button, decrementAction, incrementAction } from 'll-pkg';
-
-import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
 function TabOneScreen({ decrementAction, count, incrementAction}) {
