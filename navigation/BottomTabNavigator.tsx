@@ -7,6 +7,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
 import StruxtionScreen from '../screens/StruxtionScreen';
+import NativeScreen from '../screens/NativeScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -28,6 +29,13 @@ export default function BottomTabNavigator() {
       <BottomTab.Screen
         name="Struxtion"
         component={StruxtionNavigator}
+        options={{
+          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Native"
+        component={NativeNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
@@ -69,5 +77,19 @@ function StruxtionNavigator() {
         options={{ headerTitle: 'Struxtion' }}
       />
     </StruxtionStack.Navigator>
+  );
+}
+
+const NativeStack = createStackNavigator();
+
+function NativeNavigator() {
+  return (
+    <NativeStack.Navigator>
+      <NativeStack.Screen
+        name="Native"
+        component={NativeScreen}
+        options={{ headerTitle: 'Native Fun' }}
+      />
+    </NativeStack.Navigator>
   );
 }

@@ -16,6 +16,11 @@ export default {
               StruxtionScreen: 'struxtion',
             },
           },
+          Native: {
+            screens: {
+              NativeScreen: 'native',
+            },
+          },
         },
       },
       NotFound: '*',
