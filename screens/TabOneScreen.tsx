@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
-import { Button, decrementAction, incrementAction } from 'll-pkg';
+import { decrementAction, incrementAction } from 'll-pkg';
 import { Text, View } from '../components/Themed';
 
 function TabOneScreen({ decrementAction, count, incrementAction}) {
   return (
     <View style={styles.container}>
-      <Button text="-" onClick={decrementAction} />
+      {/* <Button text="-" onClick={decrementAction} /> */}
       <Text>{count}</Text>
-      <Button text="+" onClick={incrementAction} />
+      {/* <Button text="+" onClick={incrementAction} /> */}
     </View>
   );
 }
