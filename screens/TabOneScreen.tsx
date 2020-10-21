@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
-import { decrementAction, incrementAction } from 'll-pkg';
+import { Button, decrementAction, incrementAction } from 'll-pkg';
 import { Text, View } from '../components/Themed';
 
 function TabOneScreen({ decrementAction, count, incrementAction}) {
